@@ -18,6 +18,21 @@ Special thanks to Coraline of the 3DGE team for allowing us to use her README.md
 
 ## How to build GZDoom
 
+For Ubuntu 18.04 - 20.04 on Arm processors like the rk3326:
+```apt-get install g++ make cmake libsdl2-dev git zlib1g-dev \
+libbz2-dev libjpeg-dev libfluidsynth-dev libgme-dev libopenal-dev \
+libmpg123-dev libsndfile1-dev libgtk-3-dev timidity nasm \
+libgl1-mesa-dev tar libsdl1.2-dev libglew-dev```
+
+```
+git clone https://github.com/christianhaitian/lzdoom.git \
+cd lzdoom \
+mkdir build \
+cd build \
+cmake ../. \
+make (or use make -j2 or -j3 if you have the additional core and memory to handle this to speed up the build)```
+
+For other platforms:
 To build GZDoom, please see the [wiki](https://zdoom.org/wiki/) and see the "Programmer's Corner" on the bottom-right corner of the page to build for your platform.
 
 GZDoom repo: https://github.com/coelckers/gzdoom
