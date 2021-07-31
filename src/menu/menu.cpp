@@ -663,12 +663,12 @@ bool M_Responder (event_t *ev)
 			{
 			case KEY_JOY2:
 			case KEY_PAD_A:
-				mkey = MKEY_Back;
+				mkey = MKEY_Enter;
 				break;
 
 			case KEY_JOY1:
 			case KEY_PAD_B:
-				mkey = MKEY_Enter;
+				mkey = MKEY_Back;
 				break;
 
 			case KEY_JOY3:
@@ -686,20 +686,22 @@ bool M_Responder (event_t *ev)
 				mkey = MKEY_PageDown;
 				break;
 
-			case KEY_JOY9:
+			case KEY_JOY13:
 			case KEY_PAD_DPAD_UP:
 			case KEY_PAD_LTHUMB_UP:
 			case KEY_JOYAXIS2MINUS:
 			case KEY_JOYPOV1_UP:
-				mkey = MKEY_Up;
+				//mkey = MKEY_Up;
+				mkey = MKEY_Left;
 				break;
 
-			case KEY_JOY10:
+			case KEY_JOY14:
 			case KEY_PAD_DPAD_DOWN:
 			case KEY_PAD_LTHUMB_DOWN:
 			case KEY_JOYAXIS2PLUS:
 			case KEY_JOYPOV1_DOWN:
-				mkey = MKEY_Down;
+				//mkey = MKEY_Down;
+				mkey = MKEY_Right;
 				break;
 
 			case KEY_JOY11:
@@ -707,7 +709,8 @@ bool M_Responder (event_t *ev)
 			case KEY_PAD_LTHUMB_LEFT:
 			case KEY_JOYAXIS1MINUS:
 			case KEY_JOYPOV1_LEFT:
-				mkey = MKEY_Left;
+				//mkey = MKEY_Left;
+				mkey = MKEY_Up;
 				break;
 
 			case KEY_JOY12:
@@ -715,7 +718,8 @@ bool M_Responder (event_t *ev)
 			case KEY_PAD_LTHUMB_RIGHT:
 			case KEY_JOYAXIS1PLUS:
 			case KEY_JOYPOV1_RIGHT:
-				mkey = MKEY_Right;
+				//mkey = MKEY_Right;
+				mkey = MKEY_Down;
 				break;
 			}
 		}

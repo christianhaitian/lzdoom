@@ -188,8 +188,8 @@ enum ESkillLevels
 #define KEY_JOY10                               (KEY_FIRSTJOYBUTTON+9)
 #define KEY_JOY11                               (KEY_FIRSTJOYBUTTON+10)
 #define KEY_JOY12                               (KEY_FIRSTJOYBUTTON+11)
+#define KEY_JOY13				(KEY_FIRSTJOYBUTTON+12)
 #define KEY_JOY14				(KEY_FIRSTJOYBUTTON+13)
-#define KEY_JOY15				(KEY_FIRSTJOYBUTTON+14)
 #define KEY_LASTJOYBUTTON		0x187
 #define KEY_JOYPOV1_UP			0x188
 #define KEY_JOYPOV1_RIGHT		0x189
